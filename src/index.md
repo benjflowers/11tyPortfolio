@@ -9,5 +9,5 @@ templateEngineOverride: njk, md
 {% for section in collections.sections %}
 {{ section.data.title }}
 {{ section.templateContent | safe }}
-<hr/>
+---
 {% endfor %}

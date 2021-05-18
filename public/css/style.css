@@ -3,6 +3,5 @@ body {
 }
 
 img {
-  clip-path: circle(50%);
-  height: 200px;
+  width: 200px;
 }
