@@ -1,10 +1,10 @@
 ---
 layout: base.njk
-title: "Index"
+title: "Hey I am Ben"
 templateEngineOverride: njk, md
 ---
 
-## Probably image here
+![hero](/images/hero.png)
 
 {% for section in collections.sections %}
 {{ section.data.title }}

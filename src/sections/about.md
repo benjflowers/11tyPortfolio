@@ -1,6 +1,9 @@
 ---
 layout: base.njk
-title: "About"
+title: "Who do you think I am?"
 ---
 
-## This is the page that is all about me
+## An Artist
+## A Developer
+
+Really working on marrying those things right now
