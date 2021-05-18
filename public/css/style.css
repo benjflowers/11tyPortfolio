@@ -5,3 +5,31 @@ body {
 img {
   width: 200px;
 }
+
+.parent-container {
+  display: grid;
+  grid-template-columns: [left-gutter] 1fr [container] 12fr [right-gutter] 1fr;
+}
+
+.container {
+  grid-column: container;
+  display: grid;
+  grid-template-columns: [sidebar] 1fr [content] 4fr;
+  grid-template-rows: [header] 100px [body] auto;
+}
+
+header {
+  grid-row: header;
+  grid-column: content;
+  margin-top: 10px;
+  font-size:30pt;
+  background-color: pink;
+  text-align: center;
+}
+
+.section {
+  grid-column: content;
+  border: 1px green solid;
+  margin: 10px;
+  padding: 10px;
+}
