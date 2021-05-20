@@ -2,11 +2,19 @@
 layout: base.njk
 templateEngineOverride: njk, md
 ---
-{% button url = "/process-index", label = "Process" %}
+
 <div class="section" id="about">
+  <h3>A little about me...</h3>
   {{ collections.sections[0].templateContent | safe }}
 </div>
+<div class="section">
+  <h3>Some things I have been working on...</h3>
+  {%- for article in collections.articles %}
+    {%- button url= '/articles' + article.data.url, label=article.data.label %}
+    <br/>
+  {%- endfor %}
+</div>
 <div class="section" id="links">
-  {{ collections.sections[1].data.title}}
+  <h3>Some links to more things about me...</h3>
   {{ collections.sections[1].templateContent | safe }}
 </div>

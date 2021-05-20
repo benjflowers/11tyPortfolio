@@ -7,10 +7,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/images");
   eleventyConfig.addWatchTarget("./src/css");
 
-  const directoryPath = path.join(__dirname, '/src/_includes/components/')
-  const components = fs.readdirSync(directoryPath)
+  // read contents of component directory
+  const filesFrom = (directoryPath) => {
+    return path.join(__dirname, directoryPath)
+  }
 
-   // generate a shortcode for each component in the /src/_includes/components folder
+  // const directoryPath = path.join(__dirname, )
+  const components = fs.readdirSync(filesFrom('/src/_includes/components/'))
+
+  // Creates a short code that can be used with nunjucks
+  // component: string - file name read from the components const
   const createShortcodes = (component) => {
     eleventyConfig.addNunjucksShortcode(component.split(".")[0], (props) => {
       const filePath = path.join(__dirname, `/src/_includes/components/${component}`)
@@ -24,6 +30,7 @@ module.exports = function (eleventyConfig) {
       })
   }
 
+  // Iterate through each component in the array and create the shortcode for it
   for(let i = 0; i < components.length; i++) {
     createShortcodes(components[i])
   }

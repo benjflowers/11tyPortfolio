@@ -4,7 +4,7 @@ body {
 
 .parent-container {
   display: grid;
-  grid-template-columns: [left-gutter] 1fr [container] 12fr [right-gutter] 1fr;
+  grid-template-columns: [left-gutter] 1.5fr [container] 11fr [right-gutter] 1.5fr;
 }
 
 .container {
@@ -25,7 +25,6 @@ header {
 
 .section {
   grid-column: content;
-  border: 1px green solid;
   margin: 10px;
   padding: 10px;
 }

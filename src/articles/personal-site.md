@@ -1,9 +1,12 @@
 ---
-layout: process.njk
+layout: article.njk
 title: "Using 11ty for my Personal Site"
+url: "/personal-site"
+label: "personal site!"
 ---
 
 ## The basics
+
 I am still working through them but here is a list
 
 1. Add git ignore for node modules
