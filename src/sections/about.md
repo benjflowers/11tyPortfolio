@@ -1,9 +1,7 @@
 ---
 layout: base.njk
-title: "Who do you think I am?"
+title: "Hey Whats Up"
 ---
 
-### An Artist
-I went to school for studio art and did so good
-### A Developer
-I like to code a lot and I have been doing it for 2.5 years. I like to combine art and code
+### Whats this for
+Right now this is a place to establish [some goals](/goals-index) & some [some process](/process-index)

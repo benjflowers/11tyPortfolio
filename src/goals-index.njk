@@ -1,0 +1,8 @@
+---
+layout: goals.njk
+templateEngineOverride: njk, md
+---
+<div class="goal" id="about">
+  {{ collections.goals[0].data.title }}
+  {{ collections.goals[0].templateContent | safe }}
+</div>

@@ -3,14 +3,9 @@ layout: base.njk
 templateEngineOverride: njk, md
 ---
 <div class="section" id="about">
-  {{ collections.sections[0].data.title}}
   {{ collections.sections[0].templateContent | safe }}
 </div>
-<div class="section" id="likes">
+<div class="section" id="links">
   {{ collections.sections[1].data.title}}
   {{ collections.sections[1].templateContent | safe }}
-</div>
-<div class="section" id="links">
-  {{ collections.sections[2].data.title}}
-  {{ collections.sections[2].templateContent | safe }}
 </div>

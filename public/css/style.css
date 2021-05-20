@@ -2,10 +2,6 @@ body {
   font-family: sans-serif;
 }
 
-img {
-  width: 200px;
-}
-
 .parent-container {
   display: grid;
   grid-template-columns: [left-gutter] 1fr [container] 12fr [right-gutter] 1fr;
@@ -14,7 +10,7 @@ img {
 .container {
   grid-column: container;
   display: grid;
-  grid-template-columns: [sidebar] 1fr [content] 4fr;
+  grid-template-columns: [content] 4fr;
   grid-template-rows: [header] 100px [body] auto;
 }
 

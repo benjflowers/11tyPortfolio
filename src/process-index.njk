@@ -1,0 +1,8 @@
+---
+layout: process.njk
+templateEngineOverride: njk, md
+---
+<div class="process" id="about">
+  {{ collections.process[0].data.title }}
+  {{ collections.process[0].templateContent | safe }}
+</div>
