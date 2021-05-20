@@ -2,6 +2,7 @@
 layout: base.njk
 templateEngineOverride: njk, md
 ---
+{% button url = "/process-index", label = "Process" %}
 <div class="section" id="about">
   {{ collections.sections[0].templateContent | safe }}
 </div>
