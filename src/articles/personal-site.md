@@ -1,7 +1,7 @@
 ---
 layout: article.njk
 title: "Using 11ty for my Personal Site"
-url: "/personal-site"
+articlePath: "/personal-site"
 label: "personal site!"
 ---
 

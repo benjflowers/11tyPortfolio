@@ -1,7 +1,7 @@
 ---
 layout: article.njk
 title: "Understanding the fundamnetals of flow fields in processing"
-url: "/flow-field"
+articlePath: "/flow-field"
 label: "Flow Field"
 ---
 
