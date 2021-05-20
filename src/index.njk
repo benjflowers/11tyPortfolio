@@ -10,7 +10,7 @@ templateEngineOverride: njk, md
 <div class="section">
   <h3>Some things I have been working on...</h3>
   {%- for article in collections.articles %}
-    {%- button url='/articles' + article.data.articlePath, label=article.data.label %}
+    {%- button url='articles' + article.data.articlePath, label=article.data.label %}
     <br/>
   {%- endfor %}
 </div>

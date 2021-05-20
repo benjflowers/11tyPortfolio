@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="{{ '/css/article.css' | url }}">
     <title>Article</title>
   </head>
-  {# <script>
-            {%- include "js/article.js" %}
-          </script> #}
+  <script>{%- include "js/article.js" %}</script>
+  {% button url="/", label="Country Roads, Take Me Home" %}
   <div class="article-card">
+    <h1>{{ title }}</h1>
     {{ content | safe }}
   </div>
 </html>
