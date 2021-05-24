@@ -2,17 +2,21 @@
 layout: base.njk
 templateEngineOverride: njk, md
 ---
-
+<script>{%- include "js/index.js" %}</script>
 <div class="section" id="about">
   <h3>A little about me...</h3>
   {{ collections.sections[0].templateContent | safe }}
 </div>
 <div class="section">
   <h3>Some things I have been working on...</h3>
-  {%- for article in collections.articles %}
-    {%- button url='articles' + article.data.articlePath, label=article.data.label %}
-    <br/>
-  {%- endfor %}
+  <div class="articles">
+    {%- for article in collections.articles %}
+      <div class="article">
+        {%- button url='articles' + article.data.articlePath, label=article.data.label %}
+        <br/>
+      </div>
+    {%- endfor %}
+  </div>
 </div>
 <div class="section" id="links">
   <h3>Some links to more things about me...</h3>

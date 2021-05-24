@@ -8,9 +8,20 @@
     <title>Article</title>
   </head>
   <script>{%- include "js/article.js" %}</script>
-  {% button url="/", label="Country Roads, Take Me Home" %}
-  <div class="article-card">
-    <h1>{{ title }}</h1>
-    {{ content | safe }}
+  <div class="parent-container">
+    <div class="container">
+      <div class="header">
+        <h1>{{ title }}</h1>
+      </div>
+      <div class="article-card">
+        <div class="content">
+          {{ content | safe }}
+        </div>
+        <hr/>
+      </div>
+      <div class="back">
+        {%- button url="/", label="Country Roads, Take Me Home" %}
+      </div>
+    </div>
   </div>
 </html>

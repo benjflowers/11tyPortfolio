@@ -1,8 +1,8 @@
 ---
 layout: article.njk
-title: "11ty for my Personal Site"
+title: "Using 11ty to build this site"
 articlePath: "/personal-site"
-label: "Personal Site Process"
+label: "How I am/was building this"
 ---
 
 ## The basics

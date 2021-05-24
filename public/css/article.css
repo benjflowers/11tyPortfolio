@@ -1,3 +1,39 @@
 body {
   font-family: sans-serif;
 }
+
+.parent-container {
+  display: grid;
+  grid-template-columns: [left-gutter] 1.5fr [container] 11fr [right-gutter] 1.5fr;
+}
+
+.container {
+  grid-column: container;
+  display: grid;
+  grid-template-columns: [content] 4fr;
+  grid-template-rows: [header] 100px [body] auto [footer] 100px;
+}
+
+div.header {
+  grid-row: header;
+  grid-column: content;
+  position: relative;
+  background-color: pink;
+}
+
+div.header h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.article-card {
+  grid-column: content;
+  grid-row: body;
+}
+
+div.back {
+  grid-row: footer;
+}

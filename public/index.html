@@ -13,14 +13,32 @@
         <div class="header">
           <h1>I am Ben</h1>
         </div>
-        <div class="section" id="about">
+        <script>document.addEventListener('DOMContentLoaded', (e) => {
+  const articleContainers = document.querySelectorAll('div.article')
+  console.log(articleContainers)
+
+  for(let i = 0; i < articleContainers.length; i++) {
+    articleContainers[i].addEventListener('click', (e) => {
+      e.target.querySelector('a').click();
+    })
+  }
+})
+
+</script>
+<div class="section" id="about">
   <h3>A little about me...</h3>
   <p>I am primarily a back end developer but I don't like to live in that box. I have studio art background and I am always looking for opportunities to marry creativity with code.</p>
 </div>
 <div class="section">
-  <h3>Some things I have been working on...</h3><a href="articles/personal-site">Personal Site Process</a>
-    <br/><a href="articles/flow-field">Flow Fields</a>
-    <br/>
+  <h3>Some things I have been working on...</h3>
+  <div class="articles">
+      <div class="article"><a href="articles/personal-site">How I am/was building this</a>
+        <br/>
+      </div>
+      <div class="article"><a href="articles/flow-field">Flow Fields</a>
+        <br/>
+      </div>
+  </div>
 </div>
 <div class="section" id="links">
   <h3>Some links to more things about me...</h3>
